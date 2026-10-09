@@ -34,9 +34,20 @@ jobs:
 
       - name: Resolve Swift packages
         run: |
-          xcodebuild -resolvePackageDependencies \
-            -project Aptvios.xcodeproj \
-            -scheme Aptvios
+          set -euo pipefail
+          for attempt in 1 2 3; do
+            echo "SPM resolve attempt $attempt"
+            if xcodebuild -resolvePackageDependencies \
+              -project Aptvios.xcodeproj \
+              -scheme Aptvios \
+              -clonedSourcePackagesDirPath "$RUNNER_TEMP/SourcePackages"; then
+              exit 0
+            fi
+            echo "Resolve failed (exit $?), retrying…"
+            sleep $((attempt * 15))
+          done
+          echo "Swift package resolve failed after retries"
+          exit 1
 
       - name: Build for Simulator (no signing)
         run: |
@@ -50,6 +61,7 @@ jobs:
             -configuration Debug \
             -destination "$DESTINATION" \
             -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            -clonedSourcePackagesDirPath "$RUNNER_TEMP/SourcePackages" \
             CODE_SIGNING_ALLOWED=NO \
             CODE_SIGNING_REQUIRED=NO \
             CODE_SIGN_IDENTITY="" \
