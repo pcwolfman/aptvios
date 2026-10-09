@@ -13,10 +13,11 @@ final class PersistenceController: ObservableObject {
 
     init(inMemory: Bool = false) {
         let wantCloud = UserDefaults.standard.object(forKey: "settings.iCloudSync") as? Bool ?? false
-        iCloudEnabled = wantCloud && !inMemory
+        let useCloud = wantCloud && !inMemory
 
         let model = Self.makeModel()
-        if iCloudEnabled {
+        let builtContainer: NSPersistentContainer
+        if useCloud {
             let cloud = NSPersistentCloudKitContainer(name: "Aptvios", managedObjectModel: model)
             let description = cloud.persistentStoreDescriptions.first
             description?.setOption(true as NSNumber, forKey: NSPersistentHistoryTrackingKey)
@@ -24,10 +25,12 @@ final class PersistenceController: ObservableObject {
             description?.cloudKitContainerOptions = NSPersistentCloudKitContainerOptions(
                 containerIdentifier: "iCloud.com.aptvios.app"
             )
-            container = cloud
+            builtContainer = cloud
         } else {
-            container = NSPersistentContainer(name: "Aptvios", managedObjectModel: model)
+            builtContainer = NSPersistentContainer(name: "Aptvios", managedObjectModel: model)
         }
+        container = builtContainer
+        iCloudEnabled = useCloud
 
         if inMemory {
             container.persistentStoreDescriptions.first?.url = URL(fileURLWithPath: "/dev/null")

@@ -29,7 +29,9 @@ final class BonjourSyncService: ObservableObject {
             listener = try NWListener(using: params)
             listener?.service = NWListener.Service(name: name, type: "_aptvios._tcp")
             listener?.newConnectionHandler = { [weak self] connection in
-                self?.handleIncoming(connection)
+                Task { @MainActor in
+                    self?.handleIncoming(connection)
+                }
             }
             listener?.start(queue: .main)
             isAdvertising = true
