@@ -17,11 +17,20 @@ GitHub’da boş repo aç (önerilen: **Public** — ücretsiz macOS dakikası d
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/KULLANICI_ADIN/aptvios.git
+git remote add origin https://github.com/pcwolfman/aptvios.git
 git push -u origin main
 ```
 
-(`gh repo create` kullanıyorsan `gh auth login` sonrası da olur.)
+Bu makinede remote zaten `https://github.com/pcwolfman/aptvios.git` olarak ayarlandı.
+
+Hızlı yol (`gh` yüklü):
+
+```powershell
+gh auth login
+gh repo create aptvios --public --source=. --remote=origin --push
+```
+
+(Repo yoksa web: https://github.com/new?name=aptvios — Public seç, Create, sonra sadece `git push -u origin main`)
 
 ## 2) Sonucu gör
 
