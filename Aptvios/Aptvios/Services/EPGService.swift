@@ -106,8 +106,6 @@ private struct EPGCache: Codable {
     var programs: [String: [EPGProgram]]
 }
 
-extension EPGProgram: Codable {}
-
 enum XMLTVParser {
     static func parse(_ data: Data) throws -> [String: [EPGProgram]] {
         let parser = XMLTVDelegate()

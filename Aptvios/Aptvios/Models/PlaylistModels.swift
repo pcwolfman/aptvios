@@ -108,7 +108,7 @@ enum PlaylistFormat: String, CaseIterable, Identifiable {
     }
 }
 
-struct EPGProgram: Identifiable, Hashable {
+struct EPGProgram: Identifiable, Hashable, Codable {
     let id: UUID
     var channelId: String
     var title: String
