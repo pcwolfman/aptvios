@@ -1,0 +1,66 @@
+# Ücretsiz GitHub Actions — iOS Simulator derlemesi (imza yok)
+# Not: Public repo'da macOS dakikası daha bol. Private free hesapta aylık limit var.
+name: iOS Build
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+
+concurrency:
+  group: ios-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-simulator:
+    name: Build (iOS Simulator)
+    runs-on: macos-15
+    timeout-minutes: 60
+
+    defaults:
+      run:
+        working-directory: Aptvios
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Show Xcode version
+        run: |
+          xcodebuild -version
+          xcrun simctl list devices available | head -n 40
+
+      - name: Resolve Swift packages
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -project Aptvios.xcodeproj \
+            -scheme Aptvios
+
+      - name: Build for Simulator (no signing)
+        run: |
+          set -euo pipefail
+          DESTINATION='generic/platform=iOS Simulator'
+          echo "Using destination: $DESTINATION"
+
+          xcodebuild \
+            -project Aptvios.xcodeproj \
+            -scheme Aptvios \
+            -configuration Debug \
+            -destination "$DESTINATION" \
+            -derivedDataPath "$RUNNER_TEMP/DerivedData" \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            ONLY_ACTIVE_ARCH=NO \
+            build
+
+      - name: Upload build log on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcodebuild-derived-data-logs
+          path: ${{ runner.temp }}/DerivedData/Logs
+          if-no-files-found: ignore
+          retention-days: 7

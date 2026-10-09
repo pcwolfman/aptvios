@@ -1,0 +1,30 @@
+# macOS / Xcode
+.DS_Store
+**/xcuserdata/
+**/*.xcuserstate
+DerivedData/
+build/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# SPM
+.swiftpm/
+**/SourcePackages/
+**/Package.resolved
+
+# Secrets / local
+.env
+*.p12
+*.mobileprovision
+AuthKey_*.p8
+
+# Windows / IDE
+.vs/
+.idea/
+
+# Extracted IPA (large)
+extracted/
+APTV.zip
+APTV.ipa
+*.ipa

@@ -1,0 +1,289 @@
+{
+  "@IPAdecryptBot": "by @hiepkimcdtk55",
+  "BuildMachineOSBuild": "24D81",
+  "CFBundleAllowMixedLocalizations": true,
+  "CFBundleDevelopmentRegion": "en",
+  "CFBundleDisplayName": "APTV",
+  "CFBundleDocumentTypes": [
+    {
+      "CFBundleTypeName": "LocalConfig",
+      "LSHandlerRank": "Owner"
+    }
+  ],
+  "CFBundleExecutable": "APTV",
+  "CFBundleIcons": {
+    "CFBundleAlternateIcons": {
+      "2smile": {
+        "CFBundleIconFiles": [
+          "2smile-29",
+          "2smile-20",
+          "2smile-40",
+          "2smile-60",
+          "2smile-76",
+          "2smile-83.5",
+          "2smile-1024"
+        ]
+      },
+      "2smileDark": {
+        "CFBundleIconFiles": [
+          "2smile-dark-20",
+          "2smile-dark-29",
+          "2smile-dark-40",
+          "2smile-dark-60",
+          "2smile-dark-76",
+          "2smile-dark-83.5",
+          "2smile-dark-1024"
+        ]
+      },
+      "Cube": {
+        "CFBundleIconFiles": [
+          "cube-20",
+          "cube-29",
+          "cube-40",
+          "cube-60",
+          "cube-76",
+          "cube-83.5",
+          "cube-1024"
+        ]
+      },
+      "OldTV": {
+        "CFBundleIconFiles": [
+          "old-tv-20",
+          "old-tv-29",
+          "old-tv-40",
+          "old-tv-60",
+          "old-tv-76",
+          "old-tv-83.5",
+          "old-tv-1024"
+        ]
+      },
+      "dsbb": {
+        "CFBundleIconFiles": [
+          "dsbb-20",
+          "dsbb-29",
+          "dsbb-38",
+          "dsbb-40",
+          "dsbb-60",
+          "dsbb-64",
+          "dsbb-68",
+          "xsbb-76",
+          "xsbb-83.5"
+        ]
+      },
+      "jimmy": {
+        "CFBundleIconFiles": [
+          "jimmy-20",
+          "jimmy-29",
+          "jimmy-38",
+          "jimmy-40",
+          "jimmy-60",
+          "jimmy-64",
+          "jimmy-68",
+          "jimmy-76",
+          "jimmy-83.5"
+        ]
+      },
+      "jimmy2": {
+        "CFBundleIconFiles": [
+          "jimmy2-20",
+          "jimmy2-29",
+          "jimmy2-38",
+          "jimmy2-40",
+          "jimmy2-60",
+          "jimmy2-64",
+          "jimmy2-68",
+          "jimmy2-76",
+          "jimmy2-83.5"
+        ]
+      },
+      "xsbb": {
+        "CFBundleIconFiles": [
+          "xsbb-20",
+          "xsbb-29",
+          "xsbb-38",
+          "xsbb-40",
+          "xsbb-60",
+          "xsbb-64",
+          "xsbb-68",
+          "xsbb-76",
+          "xsbb-83.5"
+        ]
+      }
+    },
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60"
+      ],
+      "CFBundleIconName": "AppIcon",
+      "UIPrerenderedIcon": false
+    }
+  },
+  "CFBundleIcons~ipad": {
+    "CFBundleAlternateIcons": {
+      "2smile": {
+        "CFBundleIconFiles": [
+          "2smile-76",
+          "2smile-83.5",
+          "2smile-1024"
+        ]
+      },
+      "2smileDark": {
+        "CFBundleIconFiles": [
+          "2smile-dark-76",
+          "2smile-dark-83.5",
+          "2smile-dark-1024"
+        ]
+      },
+      "Cube": {
+        "CFBundleIconFiles": [
+          "cube-76",
+          "cube-83.5",
+          "cube-1024"
+        ]
+      },
+      "OldTV": {
+        "CFBundleIconFiles": [
+          "old-tv-76",
+          "old-tv-83.5",
+          "old-tv-1024"
+        ]
+      },
+      "dsbb": {
+        "CFBundleIconFiles": [
+          "dsbb-76",
+          "dsbb-83.5",
+          "dsbb-1024"
+        ]
+      },
+      "jimmy": {
+        "CFBundleIconFiles": [
+          "jimmy-76",
+          "jimmy-83.5",
+          "jimmy-1024"
+        ]
+      },
+      "jimmy2": {
+        "CFBundleIconFiles": [
+          "jimmy2-76",
+          "jimmy2-83.5",
+          "jimmy2-1024"
+        ]
+      },
+      "xsbb": {
+        "CFBundleIconFiles": [
+          "xsbb-76",
+          "xsbb-83.5",
+          "xsbb-1024"
+        ]
+      }
+    },
+    "CFBundlePrimaryIcon": {
+      "CFBundleIconFiles": [
+        "AppIcon60x60",
+        "AppIcon76x76"
+      ],
+      "CFBundleIconName": "AppIcon",
+      "UIPrerenderedIcon": false
+    },
+    "UINewsstandIcon": {
+      "CFBundleIconFiles": [
+        ""
+      ],
+      "UINewsstandBindingEdge": "UINewsstandBindingEdgeLeft",
+      "UINewsstandBindingType": "UINewsstandBindingTypeMagazine"
+    }
+  },
+  "CFBundleIdentifier": "com.kimen.aptvpro",
+  "CFBundleInfoDictionaryVersion": "6.0",
+  "CFBundleName": "APTV",
+  "CFBundlePackageType": "APPL",
+  "CFBundleShortVersionString": "9.4.5",
+  "CFBundleSupportedPlatforms": [
+    "iPhoneOS"
+  ],
+  "CFBundleURLTypes": [
+    {
+      "CFBundleTypeRole": "Editor",
+      "CFBundleURLSchemes": [
+        "aptv"
+      ]
+    }
+  ],
+  "CFBundleVersion": "2",
+  "DTAppStoreToolsBuild": "16E137",
+  "DTCompiler": "com.apple.compilers.llvm.clang.1_0",
+  "DTPlatformBuild": "22C146",
+  "DTPlatformName": "iphoneos",
+  "DTPlatformVersion": "15.0",
+  "DTSDKBuild": "22C146",
+  "DTSDKName": "iphoneos18.2",
+  "DTXcode": "1620",
+  "DTXcodeBuild": "16C5032a",
+  "ITSAppUsesNonExemptEncryption": false,
+  "LSApplicationCategoryType": "public.app-category.video",
+  "LSApplicationQueriesSchemes": [
+    "infuse",
+    "vlc-x-callback"
+  ],
+  "LSRequiresIPhoneOS": true,
+  "MinimumOSVersion": "14.0",
+  "NSAccentColorName": "AccentColor",
+  "NSAppTransportSecurity": {
+    "NSAllowsArbitraryLoads": true
+  },
+  "NSBonjourServices": [
+    "_aptv._tcp"
+  ],
+  "NSCalendarsUsageDescription": "\u662f\u5426\u5141\u8bb8APTV\u8bbf\u95ee\u60a8\u7684\u65e5\u5386",
+  "NSCameraUsageDescription": "Use camera",
+  "NSFaceIDUsageDescription": "\u9a8c\u8bc1\u901a\u8fc7\u540e\u65b9\u53ef\u4f7f\u7528\u8be5\u529f\u80fd",
+  "NSLocalNetworkUsageDescription": "Use local netwokt to connect local resource",
+  "UIApplicationSceneManifest": {
+    "UIApplicationSupportsMultipleScenes": false,
+    "UISceneConfigurations": {
+      "CPTemplateApplicationSceneSessionRoleApplication": [
+        {
+          "UISceneClassName": "CPTemplateApplicationScene",
+          "UISceneConfigurationName": "CarPlay",
+          "UISceneDelegateClassName": "APTV.CarPlaySceneDelegate"
+        }
+      ]
+    }
+  },
+  "UIApplicationSupportsIndirectInputEvents": true,
+  "UIBackgroundModes": [
+    "audio",
+    "fetch",
+    "remote-notification"
+  ],
+  "UIDeviceFamily": [
+    1,
+    2
+  ],
+  "UILaunchStoryboardName": "Launch Screen.storyboard",
+  "UIRequiredDeviceCapabilities": [
+    "arm64"
+  ],
+  "UIRequiresFullScreen": true,
+  "UISupportedInterfaceOrientations": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "UISupportedInterfaceOrientations~ipad": [
+    "UIInterfaceOrientationPortrait",
+    "UIInterfaceOrientationPortraitUpsideDown",
+    "UIInterfaceOrientationLandscapeLeft",
+    "UIInterfaceOrientationLandscapeRight"
+  ],
+  "UISupportsDocumentBrowser": true,
+  "UTImportedTypeDeclarations": [
+    {
+      "UTTypeDescription": "",
+      "UTTypeIconFiles": [],
+      "UTTypeTagSpecification": {}
+    },
+    {}
+  ],
+  "made by binnichtaktiv": "This iPA is made by binnichtaktiv for https://t.me/binnichtaktivsipas. Anyone who spreads it without credits is a clown. At least now you know where all these good iPAs come from. Join my group if you are interested."
+}

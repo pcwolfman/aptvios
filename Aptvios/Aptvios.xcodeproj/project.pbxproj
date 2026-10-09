@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9FCE42BC90FA4C55A8595308 /* AptviosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECDA689CF4784E00847310D5 /* AptviosApp.swift */; };
+		B5FA7E9F097945839A23A24E /* PlaylistModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494630E7BC314D85B3C01DEE /* PlaylistModels.swift */; };
+		63203A1F73F44BE5A05C1CE4 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAAFF72DF27472597455C53 /* AppSettings.swift */; };
+		C428746212004A26A9218DB9 /* EPGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65CC73CD32B483696B16A39 /* EPGService.swift */; };
+		618AFE90224744FAB29AA620 /* Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36ECADCD13CE4A6A8CE81298 /* Gzip.swift */; };
+		3F6EDE32C5274ABD95390707 /* M3UParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E248213CD7D4D90A33D7EB2 /* M3UParser.swift */; };
+		9A85F2F03117448DA4AB290E /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DF2A760F01349B08439211B /* PersistenceController.swift */; };
+		65EA8D6DDA894FF6839F4EEE /* PlaylistLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B553197B87784F1D8AA4A2A1 /* PlaylistLoader.swift */; };
+		61A7002EB17E49CBBEB56BE2 /* ChannelBrowserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD52A7034F964AEDA5083734 /* ChannelBrowserViewModel.swift */; };
+		48DE3A1C29094101BA6FF85D /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFC1AED4A924F409371F981 /* LibraryViewModel.swift */; };
+		F1CCB81DAF004DCDA43292CF /* PlayerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4EEE711FA447EF8BA4BD86 /* PlayerRouter.swift */; };
+		B14086105DD74687BC5910E5 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7220E4AEE08746BBAD36E272 /* PlayerViewModel.swift */; };
+		B390F7E1F2BA43BA8358424A /* ChannelBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A095ACFE994252B0ABDEFD /* ChannelBrowserView.swift */; };
+		A11CDE741F11E00000000001 /* ChannelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000002 /* ChannelDetailView.swift */; };
+		A11CDE741F11E00000000003 /* URLScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000004 /* URLScanner.swift */; };
+		A11CDE741F11E00000000005 /* ScanChannelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000006 /* ScanChannelsView.swift */; };
+		BE5A86EF5EE5471CB960547D /* ChannelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C2332501144A71BB8D2DE0 /* ChannelRow.swift */; };
+		38DACB570D5341ACA1B2BEC2 /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AE62995ED94A558BBD13C9 /* FavoritesView.swift */; };
+		3A918942C80C4C75A22F094D /* AddSourceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3513CBFA01D04D98B5D20D02 /* AddSourceView.swift */; };
+		8DB59E7A0D4C46548DBC1A31 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448EABE8099242E19C2D84A0 /* LibraryView.swift */; };
+		ACD9E0E4DF99405EB4B5DF4D /* PlayerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FEDABD1DB24EA895AA01E3 /* PlayerScreen.swift */; };
+		C75AB9B8680F4B179CC02611 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B17E056A34B438BAD2B74 /* RootTabView.swift */; };
+		C86E833C56C043EEAC7ED64F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA192E5F08145B8A5D06F0E /* SettingsView.swift */; };
+		87A266CED46247439AB1141E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 968DFEA685A849D2A2332EEA /* Assets.xcassets */; };
+
+		A11CDE741F11E00000000021 /* PlayerEngineKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000022 /* PlayerEngineKind.swift */; };
+		A11CDE741F11E00000000023 /* KSPlayerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000024 /* KSPlayerContainer.swift */; };
+		A11CDE741F11E00000000025 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000026 /* AppDelegate.swift */; };
+		A11CDE741F11E00000000027 /* CarPlaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11CDE741F11E00000000028 /* CarPlaySceneDelegate.swift */; };
+		A11CDE741F11E00000000029 /* KSPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = A11CDE741F11E0000000002A /* KSPlayer */; };
+		B11CDE741F11E00000000031 /* XtreamClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CDE741F11E00000000041 /* XtreamClient.swift */; };
+		B11CDE741F11E00000000032 /* StalkerClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CDE741F11E00000000042 /* StalkerClient.swift */; };
+		B11CDE741F11E00000000033 /* DIYPEPGClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CDE741F11E00000000043 /* DIYPEPGClient.swift */; };
+		B11CDE741F11E00000000034 /* SourceKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = B11CDE741F11E00000000044 /* SourceKind.swift */; };
+		C11CDE741F11E00000000052 /* ExternalPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E00000000051 /* ExternalPlayer.swift */; };
+		C11CDE741F11E00000000054 /* BonjourSyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E00000000053 /* BonjourSyncService.swift */; };
+		C11CDE741F11E00000000056 /* PreviewThumbnailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E00000000055 /* PreviewThumbnailService.swift */; };
+		C11CDE741F11E00000000058 /* SubtitleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E00000000057 /* SubtitleService.swift */; };
+		C11CDE741F11E0000000005A /* ChannelMergeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E00000000059 /* ChannelMergeService.swift */; };
+		C11CDE741F11E0000000005C /* ChannelEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E0000000005B /* ChannelEditView.swift */; };
+		C11CDE741F11E0000000005E /* SplitScreenPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E0000000005D /* SplitScreenPlayerView.swift */; };
+		C11CDE741F11E00000000060 /* SubtitleSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E0000000005F /* SubtitleSearchView.swift */; };
+		C11CDE741F11E00000000062 /* BonjourShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11CDE741F11E00000000061 /* BonjourShareView.swift */; };
+		D11CDE741F11E00000000062 /* CarPlayPlaybackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11CDE741F11E00000000061 /* CarPlayPlaybackController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B347B3181CD470C8D6373FB /* Aptvios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aptvios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECDA689CF4784E00847310D5 /* AptviosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AptviosApp.swift; sourceTree = "<group>"; };
+		494630E7BC314D85B3C01DEE /* PlaylistModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistModels.swift; sourceTree = "<group>"; };
+		1CAAFF72DF27472597455C53 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		B65CC73CD32B483696B16A39 /* EPGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPGService.swift; sourceTree = "<group>"; };
+		36ECADCD13CE4A6A8CE81298 /* Gzip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gzip.swift; sourceTree = "<group>"; };
+		6E248213CD7D4D90A33D7EB2 /* M3UParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M3UParser.swift; sourceTree = "<group>"; };
+		5DF2A760F01349B08439211B /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		B553197B87784F1D8AA4A2A1 /* PlaylistLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistLoader.swift; sourceTree = "<group>"; };
+		BD52A7034F964AEDA5083734 /* ChannelBrowserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelBrowserViewModel.swift; sourceTree = "<group>"; };
+		0AFC1AED4A924F409371F981 /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		1F4EEE711FA447EF8BA4BD86 /* PlayerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerRouter.swift; sourceTree = "<group>"; };
+		7220E4AEE08746BBAD36E272 /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		66A095ACFE994252B0ABDEFD /* ChannelBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelBrowserView.swift; sourceTree = "<group>"; };
+		A11CDE741F11E00000000002 /* ChannelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelDetailView.swift; sourceTree = "<group>"; };
+		A11CDE741F11E00000000004 /* URLScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLScanner.swift; sourceTree = "<group>"; };
+		A11CDE741F11E00000000006 /* ScanChannelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanChannelsView.swift; sourceTree = "<group>"; };
+		C5C2332501144A71BB8D2DE0 /* ChannelRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelRow.swift; sourceTree = "<group>"; };
+		21AE62995ED94A558BBD13C9 /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
+		3513CBFA01D04D98B5D20D02 /* AddSourceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSourceView.swift; sourceTree = "<group>"; };
+		448EABE8099242E19C2D84A0 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		26FEDABD1DB24EA895AA01E3 /* PlayerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScreen.swift; sourceTree = "<group>"; };
+		FC6B17E056A34B438BAD2B74 /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+		DBA192E5F08145B8A5D06F0E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		968DFEA685A849D2A2332EEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3D5039D80214FB0BE9DA840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+
+		A11CDE741F11E00000000022 /* PlayerEngineKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEngineKind.swift; sourceTree = "<group>"; };
+		A11CDE741F11E00000000024 /* KSPlayerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSPlayerContainer.swift; sourceTree = "<group>"; };
+		A11CDE741F11E00000000026 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A11CDE741F11E00000000028 /* CarPlaySceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlaySceneDelegate.swift; sourceTree = "<group>"; };
+		A11CDE741F11E0000000002B /* Aptvios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Aptvios.entitlements; sourceTree = "<group>"; };
+		B11CDE741F11E00000000041 /* XtreamClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XtreamClient.swift; sourceTree = "<group>"; };
+		B11CDE741F11E00000000042 /* StalkerClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StalkerClient.swift; sourceTree = "<group>"; };
+		B11CDE741F11E00000000043 /* DIYPEPGClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYPEPGClient.swift; sourceTree = "<group>"; };
+		B11CDE741F11E00000000044 /* SourceKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceKind.swift; sourceTree = "<group>"; };
+		C11CDE741F11E00000000051 /* ExternalPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalPlayer.swift; sourceTree = "<group>"; };
+		C11CDE741F11E00000000053 /* BonjourSyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourSyncService.swift; sourceTree = "<group>"; };
+		C11CDE741F11E00000000055 /* PreviewThumbnailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewThumbnailService.swift; sourceTree = "<group>"; };
+		C11CDE741F11E00000000057 /* SubtitleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleService.swift; sourceTree = "<group>"; };
+		C11CDE741F11E00000000059 /* ChannelMergeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelMergeService.swift; sourceTree = "<group>"; };
+		C11CDE741F11E0000000005B /* ChannelEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelEditView.swift; sourceTree = "<group>"; };
+		C11CDE741F11E0000000005D /* SplitScreenPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitScreenPlayerView.swift; sourceTree = "<group>"; };
+		C11CDE741F11E0000000005F /* SubtitleSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitleSearchView.swift; sourceTree = "<group>"; };
+		C11CDE741F11E00000000061 /* BonjourShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BonjourShareView.swift; sourceTree = "<group>"; };
+		D11CDE741F11E00000000061 /* CarPlayPlaybackController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarPlayPlaybackController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		9132A20B5F4A4C64AF59D7DB = {
+			isa = PBXGroup;
+			children = (
+				84FF0D464B824DD88B141D39 /* Aptvios */,
+				238D9766A9D949BCA1E5C63C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		238D9766A9D949BCA1E5C63C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B347B3181CD470C8D6373FB /* Aptvios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FF0D464B824DD88B141D39 /* Aptvios */ = {
+			isa = PBXGroup;
+			children = (
+				99E442E9C8964429AE327F39 /* App */,
+				D17FBDA8B1624BD2B2FE7D70 /* Models */,
+				4B16BD215F6B4CF489CDA9B6 /* Services */,
+				A527F03355104C0786DC68ED /* ViewModels */,
+				A11CDE741F11E0000000002C /* CarPlay */,
+				8F4BECC1FB154F34989379B2 /* Views */,
+				1EAA7BCC8ECB40C7AFD4A5F5 /* Resources */,
+			);
+			path = Aptvios;
+			sourceTree = "<group>";
+		};
+		99E442E9C8964429AE327F39 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ECDA689CF4784E00847310D5 /* AptviosApp.swift */,
+				A11CDE741F11E00000000026 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D17FBDA8B1624BD2B2FE7D70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				494630E7BC314D85B3C01DEE /* PlaylistModels.swift */,
+				A11CDE741F11E00000000022 /* PlayerEngineKind.swift */,
+				B11CDE741F11E00000000044 /* SourceKind.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4B16BD215F6B4CF489CDA9B6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1CAAFF72DF27472597455C53 /* AppSettings.swift */,
+				B65CC73CD32B483696B16A39 /* EPGService.swift */,
+				B11CDE741F11E00000000043 /* DIYPEPGClient.swift */,
+				36ECADCD13CE4A6A8CE81298 /* Gzip.swift */,
+				6E248213CD7D4D90A33D7EB2 /* M3UParser.swift */,
+				5DF2A760F01349B08439211B /* PersistenceController.swift */,
+				B553197B87784F1D8AA4A2A1 /* PlaylistLoader.swift */,
+				B11CDE741F11E00000000042 /* StalkerClient.swift */,
+				A11CDE741F11E00000000004 /* URLScanner.swift */,
+				C11CDE741F11E00000000059 /* ChannelMergeService.swift */,
+				C11CDE741F11E00000000057 /* SubtitleService.swift */,
+				C11CDE741F11E00000000055 /* PreviewThumbnailService.swift */,
+				C11CDE741F11E00000000053 /* BonjourSyncService.swift */,
+				C11CDE741F11E00000000051 /* ExternalPlayer.swift */,
+				B11CDE741F11E00000000041 /* XtreamClient.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A527F03355104C0786DC68ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BD52A7034F964AEDA5083734 /* ChannelBrowserViewModel.swift */,
+				0AFC1AED4A924F409371F981 /* LibraryViewModel.swift */,
+				1F4EEE711FA447EF8BA4BD86 /* PlayerRouter.swift */,
+				7220E4AEE08746BBAD36E272 /* PlayerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8F4BECC1FB154F34989379B2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B17E056A34B438BAD2B74 /* RootTabView.swift */,
+				209E26A14E2C403C8E8C094F /* Library */,
+				8A61362EA999444BA7ECD369 /* Channels */,
+				7F0D132E38A142D087B4361E /* Favorites */,
+				4C685B42240A494A85E95F51 /* Settings */,
+				2AC2C61ABC3A4098BF0A1353 /* Player */,
+				16E1450DBA5F42D0A5102838 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		209E26A14E2C403C8E8C094F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3513CBFA01D04D98B5D20D02 /* AddSourceView.swift */,
+				448EABE8099242E19C2D84A0 /* LibraryView.swift */,
+				A11CDE741F11E00000000006 /* ScanChannelsView.swift */,
+				C11CDE741F11E00000000061 /* BonjourShareView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		8A61362EA999444BA7ECD369 /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				66A095ACFE994252B0ABDEFD /* ChannelBrowserView.swift */,
+				A11CDE741F11E00000000002 /* ChannelDetailView.swift */,
+				C11CDE741F11E0000000005B /* ChannelEditView.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		7F0D132E38A142D087B4361E /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				21AE62995ED94A558BBD13C9 /* FavoritesView.swift */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		4C685B42240A494A85E95F51 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DBA192E5F08145B8A5D06F0E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2AC2C61ABC3A4098BF0A1353 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				26FEDABD1DB24EA895AA01E3 /* PlayerScreen.swift */,
+				A11CDE741F11E00000000024 /* KSPlayerContainer.swift */,
+				C11CDE741F11E0000000005F /* SubtitleSearchView.swift */,
+				C11CDE741F11E0000000005D /* SplitScreenPlayerView.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		16E1450DBA5F42D0A5102838 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C5C2332501144A71BB8D2DE0 /* ChannelRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1EAA7BCC8ECB40C7AFD4A5F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				968DFEA685A849D2A2332EEA /* Assets.xcassets */,
+				D3D5039D80214FB0BE9DA840 /* Info.plist */,
+				A11CDE741F11E0000000002B /* Aptvios.entitlements */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+
+		A11CDE741F11E0000000002C /* CarPlay */ = {
+			isa = PBXGroup;
+			children = (
+				A11CDE741F11E00000000028 /* CarPlaySceneDelegate.swift */,
+				D11CDE741F11E00000000061 /* CarPlayPlaybackController.swift */,
+			);
+			path = CarPlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		965D8865927F4646896E65D2 /* Aptvios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F1DAB033F34E86B3941473 /* Build configuration list for PBXNativeTarget "Aptvios" */;
+			buildPhases = (
+				9E823874E9F349C9B43CF4EF /* Sources */,
+				FC127EE4B0A44F0BBA4CC05E /* Frameworks */,
+				886BF5AE479C42F788533FAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aptvios;
+			packageProductDependencies = (
+				A11CDE741F11E0000000002A /* KSPlayer */,
+			);
+			productName = Aptvios;
+			productReference = 3B347B3181CD470C8D6373FB /* Aptvios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		604CA55BDBCE406DAE90EA48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					965D8865927F4646896E65D2 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = E8D8E321827142F7B687AA21 /* Build configuration list for PBXProject "Aptvios" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = tr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				tr,
+				Base,
+			);
+			mainGroup = 9132A20B5F4A4C64AF59D7DB;
+			packageReferences = (
+				A11CDE741F11E0000000002D /* XCRemoteSwiftPackageReference "KSPlayer" */,
+			);
+			productRefGroup = 238D9766A9D949BCA1E5C63C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				965D8865927F4646896E65D2 /* Aptvios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		886BF5AE479C42F788533FAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87A266CED46247439AB1141E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC127EE4B0A44F0BBA4CC05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A11CDE741F11E00000000029 /* KSPlayer in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E823874E9F349C9B43CF4EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9FCE42BC90FA4C55A8595308 /* AptviosApp.swift in Sources */,
+				B5FA7E9F097945839A23A24E /* PlaylistModels.swift in Sources */,
+				63203A1F73F44BE5A05C1CE4 /* AppSettings.swift in Sources */,
+				C428746212004A26A9218DB9 /* EPGService.swift in Sources */,
+				618AFE90224744FAB29AA620 /* Gzip.swift in Sources */,
+				3F6EDE32C5274ABD95390707 /* M3UParser.swift in Sources */,
+				9A85F2F03117448DA4AB290E /* PersistenceController.swift in Sources */,
+				65EA8D6DDA894FF6839F4EEE /* PlaylistLoader.swift in Sources */,
+				A11CDE741F11E00000000003 /* URLScanner.swift in Sources */,
+				61A7002EB17E49CBBEB56BE2 /* ChannelBrowserViewModel.swift in Sources */,
+				48DE3A1C29094101BA6FF85D /* LibraryViewModel.swift in Sources */,
+				F1CCB81DAF004DCDA43292CF /* PlayerRouter.swift in Sources */,
+				B14086105DD74687BC5910E5 /* PlayerViewModel.swift in Sources */,
+				B390F7E1F2BA43BA8358424A /* ChannelBrowserView.swift in Sources */,
+				A11CDE741F11E00000000001 /* ChannelDetailView.swift in Sources */,
+				BE5A86EF5EE5471CB960547D /* ChannelRow.swift in Sources */,
+				38DACB570D5341ACA1B2BEC2 /* FavoritesView.swift in Sources */,
+				3A918942C80C4C75A22F094D /* AddSourceView.swift in Sources */,
+				A11CDE741F11E00000000005 /* ScanChannelsView.swift in Sources */,
+				8DB59E7A0D4C46548DBC1A31 /* LibraryView.swift in Sources */,
+				ACD9E0E4DF99405EB4B5DF4D /* PlayerScreen.swift in Sources */,
+				C75AB9B8680F4B179CC02611 /* RootTabView.swift in Sources */,
+				C86E833C56C043EEAC7ED64F /* SettingsView.swift in Sources */,
+				C11CDE741F11E00000000052 /* ExternalPlayer.swift in Sources */,
+				C11CDE741F11E00000000054 /* BonjourSyncService.swift in Sources */,
+				C11CDE741F11E00000000056 /* PreviewThumbnailService.swift in Sources */,
+				C11CDE741F11E00000000058 /* SubtitleService.swift in Sources */,
+				C11CDE741F11E0000000005A /* ChannelMergeService.swift in Sources */,
+				C11CDE741F11E0000000005C /* ChannelEditView.swift in Sources */,
+				C11CDE741F11E0000000005E /* SplitScreenPlayerView.swift in Sources */,
+				C11CDE741F11E00000000060 /* SubtitleSearchView.swift in Sources */,
+				C11CDE741F11E00000000062 /* BonjourShareView.swift in Sources */,
+
+				A11CDE741F11E00000000027 /* CarPlaySceneDelegate.swift in Sources */,
+				D11CDE741F11E00000000062 /* CarPlayPlaybackController.swift in Sources */,
+				A11CDE741F11E00000000025 /* AppDelegate.swift in Sources */,
+				A11CDE741F11E00000000023 /* KSPlayerContainer.swift in Sources */,
+				A11CDE741F11E00000000021 /* PlayerEngineKind.swift in Sources */,
+				B11CDE741F11E00000000031 /* XtreamClient.swift in Sources */,
+				B11CDE741F11E00000000032 /* StalkerClient.swift in Sources */,
+				B11CDE741F11E00000000033 /* DIYPEPGClient.swift in Sources */,
+				B11CDE741F11E00000000034 /* SourceKind.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B01F5704E83D49688E530F98 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F65ADCFCF76E45A8BDFB077D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4FA2B0BD9BC4F16AD4AE6BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Aptvios/Resources/Aptvios.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Aptvios/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aptvios;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aptvios.app;
+				PRODUCT_NAME = Aptvios;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+
+			};
+			name = Debug;
+		};
+		ECB6B9F94B4A4408901522F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Aptvios/Resources/Aptvios.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Aptvios/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Aptvios;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aptvios.app;
+				PRODUCT_NAME = Aptvios;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8D8E321827142F7B687AA21 /* Build configuration list for PBXProject "Aptvios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01F5704E83D49688E530F98 /* Debug */,
+				F65ADCFCF76E45A8BDFB077D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09F1DAB033F34E86B3941473 /* Build configuration list for PBXNativeTarget "Aptvios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4FA2B0BD9BC4F16AD4AE6BA /* Debug */,
+				ECB6B9F94B4A4408901522F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A11CDE741F11E0000000002D /* XCRemoteSwiftPackageReference "KSPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kingslay/KSPlayer.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A11CDE741F11E0000000002A /* KSPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A11CDE741F11E0000000002D /* XCRemoteSwiftPackageReference "KSPlayer" */;
+			productName = KSPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 604CA55BDBCE406DAE90EA48 /* Project object */;
+}
