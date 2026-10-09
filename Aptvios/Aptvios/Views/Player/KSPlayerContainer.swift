@@ -23,8 +23,8 @@ struct KSPlayerContainer: View {
     }
 
     private func makeOptions() -> KSOptions {
+        KSOptions.isAutoPlay = true
         let options = KSOptions()
-        options.isAutoPlay = true
         options.userAgent = userAgent
         options.referer = referer
         options.canStartPictureInPictureAutomaticallyFromInline = true

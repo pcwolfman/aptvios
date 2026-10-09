@@ -103,7 +103,7 @@ final class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegat
             Task { @MainActor in
                 let search = CPSearchTemplate()
                 search.delegate = self
-                self?.interfaceController?.push(template: search, animated: true)
+                self?.interfaceController?.pushTemplate(search, animated: true)
                 completion()
             }
         }
@@ -204,7 +204,7 @@ final class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegat
         allItem.handler = { [weak self] _, completion in
             Task { @MainActor in
                 if let channels = self?.channelsTemplate {
-                    self?.interfaceController?.push(template: channels, animated: true)
+                    self?.interfaceController?.pushTemplate(channels, animated: true)
                 }
                 completion()
             }
@@ -220,7 +220,7 @@ final class CarPlaySceneDelegate: UIResponder, CPTemplateApplicationSceneDelegat
                         title: key,
                         sections: self?.sections(for: list, empty: "Boş") ?? []
                     )
-                    self?.interfaceController?.push(template: detail, animated: true)
+                    self?.interfaceController?.pushTemplate(detail, animated: true)
                     completion()
                 }
             }
